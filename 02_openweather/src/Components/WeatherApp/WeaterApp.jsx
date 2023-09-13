@@ -9,15 +9,33 @@ import wind_icon from '../Assets/wind.png'
 function WeaterApp() {
     //* AQUÍ VA LA LÓGICA DE NUESTRO COMPONENTE 
 
+    
 
+    const search = () =>{
+        const element = document.getElementsByClassName("cityInput")
+        if(element[0].value===''){
+            return 0
+        }
+    
+        let URI = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&unit&lat=44.34&lon=10.99&appid=${process.env.REACT_APP_API_KEY}`
+
+        {/* HAGO LA LLAMADA A LA API*/}
+   
+        let response = fetch(URI)
+        let data = response.json()
+   
+
+    
+    }
+
+   
 
 
   return (
     //* VA TODA NUESTRA ESTRUCTURA HTML 
-
         <div className="container">
             <div className="top-bar">
-                <input type="text" />
+                <input type="text" className="cityInput" placeholder="Buscar"/>
                 <div className="search-icon">
                     <img src={search_icon} alt="search_icon" />
                 </div>
