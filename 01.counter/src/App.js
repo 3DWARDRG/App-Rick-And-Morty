@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Counter from './Counter'
+//import Counter from './Counter.js'
+import Counter from './Counter.jsx'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-         <Counter initCount={7}/>
+        {/*  <Counter initCount={10} /> */}
+        <Counter initCount={7} />
       </header>
     </div>
   );
