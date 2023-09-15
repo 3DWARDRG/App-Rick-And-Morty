@@ -6,6 +6,7 @@ import humidity_icon from '../Assets/humidity.png'
 import wind_icon from '../Assets/wind.png'
 
 
+
 function WeaterApp() {
     //* AQUÍ VA LA LÓGICA DE NUESTRO COMPONENTE 
 
@@ -32,7 +33,6 @@ function WeaterApp() {
         wind[0].innerHTML=data.wind.speed+"km/h"
         temperature[0].innerHTML=data.main.temp+"°F"
         location[0].innerHTML=data.name
-
     }
 
    
