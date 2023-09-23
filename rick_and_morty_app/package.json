@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD:rick_and_morty_app/package.json
-  "name": "rick_and_morty_app",
-=======
   "name": "02_openweather",
->>>>>>> 19cf545d6c866c8c9a29626b567161b4c915ec1d:02_openweather/package.json
   "version": "0.1.0",
   "private": true,
   "dependencies": {

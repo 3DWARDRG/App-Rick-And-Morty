@@ -1,0 +1,19 @@
+.spinner-border.per{
+    z-index: 9999; /* Asegura que el spinner esté en la capa superior */
+    width: 12vw;
+    height: 20rem;
+}
+
+.loading-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fija la posición del fondo */
+    z-index: 9998; /* Asegura que el fondo esté debajo del spinner */
+    width: 100%; /* Asegura que el fondo cubra toda la pantalla horizontalmente */
+    height: 100%; /* Asegura que el fondo cubra toda la pantalla verticalmente */
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
